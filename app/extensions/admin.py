@@ -1,6 +1,6 @@
 from flask_admin import Admin
 
-admin = Admin(name="ML", template="bootstrap4")
+admin = Admin(name="ML", template_mode="bootstrap4")
 
 
 def init_app(app):
