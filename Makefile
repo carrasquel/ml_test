@@ -23,3 +23,6 @@ migrate:
 
 build:
 	docker build -t ml_test .
+
+run:
+	docker run -d -p 1088:80 ml_test
