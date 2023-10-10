@@ -14,3 +14,12 @@ PYTHON=$(INTERPRETER_DIR)/python
 
 deps:
 	$(INTERPRETER_DIR)/pip install -r ./requirements.txt
+
+
+migrate:
+	-flask db init
+	-flask db migrate
+	flask db upgrade
+
+build:
+	docker build -t ml_test .
